@@ -107,7 +107,7 @@ median(total.steps.inputed$daily_steps)
 Initial.Df.Inputed$date <- as.Date(strptime(Initial.Df.Inputed$date, format="%Y-%m-%d"))
 #Creating the factor variable
 Initial.Df.Inputed$datetype <- sapply(Initial.Df.Inputed$date, function(x) {
-        if (weekdays(x) == "Sábado" | weekdays(x) =="Domingo") 
+        if (weekdays(x) == "Monday" | weekdays(x) =="Tuesday" | weekdays(x) =="Wednesday"| weekdays(x) =="Thrusday"|weekdays(x) =="Friday") 
                 {y <- "Weekend"} else 
                 {y <- "Weekday"}
                 y
